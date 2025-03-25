@@ -100,7 +100,7 @@ main {
 .hello {
   font-size: 38px;
   font-weight: 500;
-  margin-block: 20px;
+  margin-block: 10px;
 }
 
 .name {
@@ -130,5 +130,62 @@ main {
 .typing-wrapper {
   display: flex;
   align-items: center;
-  height: 50px; /* Biar tinggi stabil */
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.info {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  word-spacing: 1px;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  main {
+    width: 90%;
+    padding: 20px;
+    font-size: 18px;
+    align-items: flex-start;
+  }
+
+  .hello {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .typedtext {
+    font-size: 30px;
+    height: auto;
+  }
+
+  .typed-cursor {
+    font-size: 30px;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .logo .f, .logo span {
+    font-size: 32px;
+  }
 }
