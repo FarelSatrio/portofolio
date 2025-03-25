@@ -90,7 +90,7 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: last baseline;
+  align-items: flex-start;
   min-height: 80vh;
   flex-direction: column;
   width: 55%;
@@ -115,4 +115,20 @@ main {
 
 .typedtext {
   color: var(--main-color);
+  font-size: 40px;
+  font-weight: 600;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.typed-cursor {
+  font-size: 40px;
+  vertical-align: middle;
+  line-height: 1;
+}
+.typing-wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px; /* Biar tinggi stabil */
 }
