@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --bg-color: #1f242d;
+
+  --second-bg-color: #323946;
+  --text-color: #ffffffe2;
+
+  --main-color: rgb(0,251,255);
+  --third-color: rgb(192,166,49);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color)
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color:  var(--bg-color);
+  padding: 10px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.f {
+  color: var(--text-color);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+}
+
+.logo span {
+  color: var(--main-color);
+  position: absolute;
+  top: 0.5px;
+  right: -18px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+}
+
+.logo span:hover {
+  color: var(--text-color);
+}
+
+.f:hover {
+  color: var(--main-color);
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+
+.social-icon img:hover {
+  transform: scale(1.1);
+  opacity: 0.8; 
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  min-height: 80vh;
+  flex-direction: column;
+  width: 55%;
+  padding-left: 90px;
+}
+
+.hello {
+  font-size: 38px;
+  font-weight: 500;
+  margin-block: 20px;
+}
+
+.name {
+  font-size: 40px;
+}
+.name span{
+  background-color: var(--third-color);
+  color: var(--bg-color);
+  padding: 1.5px 8px;
+  border-radius: 5px;
+}
+
+.typedtext {
+  color: var(--main-color);
+}
